@@ -1,0 +1,51 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.table {
+  position: relative;
+}
+
+.titles {
+  /* position: fixed; */
+  color: green;
+  height: 20px;
+
+  @media (min-width: 700px) {
+    /* tablet */
+    color: red;
+  }
+
+  @media (min-width: 1200px) {
+    /*desktop*/
+    color: blue;
+  }
+}
+
+/* .btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: blue;
+  width: 100px;
+}
+
+.btn:focus {
+  color: red;
+}
+ */
+
+.btn {
+  cursor: pointer;
+
+  &:hover {
+    color: red;
+    width: 100px;
+  }
+
+  &:focus {
+    color: blue;
+  }
+}
